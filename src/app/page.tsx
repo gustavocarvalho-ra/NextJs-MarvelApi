@@ -1,15 +1,17 @@
+"use client"
+
 import Image from "next/image";
-import styles from "./page.module.css";
 import Link from "next/link";
 
+import { Man } from "./styles"; 
 
 export default function Home() {
 
   return (
-    <div>
-      <p>
-        <Link></Link>
-      </p>
-    </div>
+    <Man>
+      <button className="bt">
+        <Link href={'/has'}>Ir para busca</Link>
+      </button>
+    </Man>
   );
 }
