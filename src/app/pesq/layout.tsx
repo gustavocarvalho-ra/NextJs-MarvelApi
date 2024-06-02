@@ -1,24 +1,24 @@
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
-// import "../app/page.module.css";
 
 import Header from "@/components/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "L_v2",
   description: "Loja de roupas",
+  
 };
 
-export default function Layout({
+export default function LayoutOff({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <>
-        <Header />
+      <Header />
       <html lang="en">
         <body className={inter.className}>{children}
         </body>
