@@ -22,7 +22,7 @@ export default function Layout({
         <Header />
         <body className={inter.className}>{children}
         </body>
-      </html>765'
+      </html>
     </>
   );
 }
