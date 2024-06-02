@@ -12,7 +12,7 @@ export default function Home() {
       <div className="bac">
         <div className="container">
           <h1>MARVEL <span>CHARACTERS</span></h1>
-          <Link className="hel" href={'/pesq/has'}>
+          <Link className="hel" href={'/pesq'}>
             <button>
               Ir para busca
             </button>

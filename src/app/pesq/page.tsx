@@ -8,12 +8,9 @@ export default function Aaa() {
 
   return (
     <>
-      {/* <Header /> */}
-      <div>
-        <p>
-          asdd
-        </p>
-      </div>
+      <p>
+        asdd
+      </p>
     </>
   );
 }

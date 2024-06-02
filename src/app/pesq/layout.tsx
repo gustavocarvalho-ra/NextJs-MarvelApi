@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import type { Metadata } from "next";
 // import "../app/page.module.css";
 
 import Header from "@/components/Header";
@@ -18,8 +18,8 @@ export default function Layout({
 }>) {
   return (
     <>
-      <html lang="en">
         <Header />
+      <html lang="en">
         <body className={inter.className}>{children}
         </body>
       </html>
