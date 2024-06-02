@@ -55,6 +55,5 @@ export const Man = styled.div `
         cursor: pointer;
       }
     }
-  
   }
 `
