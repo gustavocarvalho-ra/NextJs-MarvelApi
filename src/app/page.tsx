@@ -14,9 +14,11 @@ export default function Home() {
       <div className="bac">
         <div className="container">
           <h1>MARVEL <span>CHARACTERS</span></h1>
-          <button className="bt">
-            <Link className="hel" href={'/pesq/has'}>Ir para busca</Link>
-          </button>
+          <Link className="hel" href={'/pesq/has'}>
+            <button>
+              Ir para busca
+            </button>
+          </Link>
         </div>
 
         <Image className="bg" src={back} alt="test" fill={true} />

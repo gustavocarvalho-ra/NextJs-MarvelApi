@@ -16,7 +16,7 @@ export const Man = styled.div `
 
     .bg {
       object-fit: cover;
-      filter: brightness(19%);
+      filter: brightness(13%);
       z-index: -5;
     }
   }
@@ -30,14 +30,29 @@ export const Man = styled.div `
 
     h1 {
       color: red;
+      font-size: 7em;
 
       span {
         color: #fff;
       }
     }
-    .bt {
-      width: 200px;
-      height: 50px;
+    .hel {
+      width: 300px;
+      height: 100px;
+      align-content: center;
+      justify-content: center;
+
+      button {
+        text-transform: uppercase;
+        font-size: 2em;
+        width: 100%;
+        height: 100%;
+        border-radius: 1em;
+        filter: blur(0.1px);
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px;
+        cursor: pointer;
+      }
     }
   
   }
