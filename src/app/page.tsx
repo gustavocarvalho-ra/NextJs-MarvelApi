@@ -12,14 +12,14 @@ export default function Home() {
   return (
     <Man>
       <div className="bac">
-
-        <Image className="bg" src={back} alt="test" fill={true} />
+        <div className="container">
           <h1>MARVEL <span>CHARACTERS</span></h1>
-
           <button className="bt">
-
             <Link className="hel" href={'/pesq/has'}>Ir para busca</Link>
           </button>
+        </div>
+
+        <Image className="bg" src={back} alt="test" fill={true} />
       </div>
     </Man>
   );
