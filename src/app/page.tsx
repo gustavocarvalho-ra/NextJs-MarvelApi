@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import back from "../public/back.png"
+import back from "../public/images/nest.png"
 
 import { Man } from "./styles"; 
 
@@ -13,7 +13,7 @@ export default function Home() {
     <Man>
       <div className="bac">
 
-        {/* <Image src={back} alt="test" width={1800} height={900} position={absolute}></Image> */}
+        <Image className="bg" src={back} alt="test" fill={true} />
           <h1>MARVEL <span>CHARACTERS</span></h1>
 
           <button className="bt">

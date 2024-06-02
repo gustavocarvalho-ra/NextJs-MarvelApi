@@ -15,6 +15,12 @@ export const Man = styled.div `
   .bac {
     width: 100vw;
     height: 100vh;
+    position: relative;
+
+    .bg {
+      object-fit: cover;
+      z-index: -5;
+    }
   }
   h1 {
     color: red;
