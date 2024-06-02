@@ -41,16 +41,17 @@ export const Man = styled.div `
       height: 100px;
       align-content: center;
       justify-content: center;
-
+      
       button {
-        text-transform: uppercase;
-        font-size: 2em;
         width: 100%;
         height: 100%;
-        border-radius: 1em;
-        filter: blur(0.1px);
+        color: #fff;
+        font-size: 2em;
+        text-transform: uppercase;
         background: rgba(255, 255, 255, 0.05);
-        border: 1px;
+        filter: blur(0.1px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 1em;
         cursor: pointer;
       }
     }
