@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import back from "../public/images/nest.png"
 import { Man } from "./styles"; 
 
 export default function Home() {
@@ -20,7 +19,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <Image className="bg" src={back} alt="test" fill={true} />
+        <Image className="bg" src={"/nest.png"} alt="test" fill={true} />
       </div>
     </Man>
   );

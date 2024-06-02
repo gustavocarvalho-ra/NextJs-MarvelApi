@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../../";
 
 import Header from "@/components/Header";
 
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Loja de roupas",
 };
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{
   children: React.ReactNode;
