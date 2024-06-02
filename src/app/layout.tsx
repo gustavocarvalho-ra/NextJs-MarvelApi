@@ -6,6 +6,7 @@ const inter = Poppins({ subsets: ["latin"], weight: "900" });
 
 export const metadata: Metadata = {
   title: "L_v2",
+  icons: "./favicon.ico",
   description: "Loja de roupas",
 };
 
