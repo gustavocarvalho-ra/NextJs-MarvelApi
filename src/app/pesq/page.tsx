@@ -12,11 +12,11 @@ export default function Aaa() {
   const Api = '1819332dc7d58586ce9a9bc528e0b7b2';
   const hash = '0c2e2c494bf371cd4661eb29d1ad3931';
 
-  fetch(`https://gateway.marvel.com:443/v1/public/characters?ts=${timeStamp}&apiKey=${Api}&hash=${hash}&limit=6`)
-  .then((response) => {
+  fetch(`https://gateway.marvel.com:443/v1/public/characters?limit=6&ts=${timeStamp}&apikey=${Api}&hash=${hash}`
+  ).then((response) => {
     return response.json();
-  }).then((data) => {
-    console.log(data);
+  }).then((jsonParsed) => {
+    console.log(jsonParsed);
   })
 
 
