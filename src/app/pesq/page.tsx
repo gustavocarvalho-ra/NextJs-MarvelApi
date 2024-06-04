@@ -25,7 +25,7 @@ export default function Aaa() {
       {data
       .map(key => (
         <div>
-          <p>`${key.id}</p>
+          <p>`${key.id}`</p>
         </div>
       ))}
       <p>
