@@ -20,8 +20,6 @@ export default function Aaa() {
   })
 
 
-
-
   return (
     <Bg>
       {data
