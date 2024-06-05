@@ -11,18 +11,26 @@ export default function Aaa() {
   const keyPr = 'fbdcd44109e6c3664d1217c42bc25417a9421498'
   const hash = md5(time + keyPr + keyPu);
 
-  
-  const data = fetch(`https://gateway.marvel.com:443/v1/public/characters?limit=6&ts=${time}&apikey=${keyPu}&hash=${hash}`
-  ).then((response) => {
-    return response.json();
-  }).then((jsonParsed) => {
-    console.log(jsonParsed);
-  })
+  async function htt() {
+    const data = await fetch(`https://gateway.marvel.com:443/v1/public/characters?limit=6&ts=${time}&apikey=${keyPu}&hash=${hash}`
+    ).then((response) => {
+      return response.json();
+    }).then((jsonParsed) => {
+      console.log(jsonParsed);
+    })
+    
+  }
+  // const data = fetch(`https://gateway.marvel.com:443/v1/public/characters?limit=6&ts=${time}&apikey=${keyPu}&hash=${hash}`
+  // ).then((response) => {
+  //   return response.json();
+  // }).then((jsonParsed) => {
+  //   console.log(jsonParsed);
+  // })
 
 
   return (
     <Bg>
-      {data
+      {
       .map(key => (
         <div>
           <p>`${key.id}`</p>
