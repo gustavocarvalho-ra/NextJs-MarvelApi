@@ -1,1 +1,2 @@
-Inicio da segunda versão de uma loja fictícia
+# Projeto de um site de personagens utilizando a API da Marvel
+##
