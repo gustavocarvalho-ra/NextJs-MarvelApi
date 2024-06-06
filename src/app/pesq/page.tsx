@@ -37,7 +37,7 @@ export default function Prin() {
     <Bg>
       {data.map((item) => (
         <div key={item.id}>
-          <p>{item.name}</p>
+          <p className="nam">{item.name}</p>
         </div>
       ))}
     </Bg>
