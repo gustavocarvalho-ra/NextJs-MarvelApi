@@ -1,59 +1,45 @@
 "use client"
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
-import md5 from 'md5';
+import md5 from "md5";
 
 import { Bg } from "./styles";
 
-export default function Aaa() {
+export default function Prin() {
   const time = Number(new Date());
-  const keyPu = '1819332dc7d58586ce9a9bc528e0b7b2';
-  const keyPr = 'fbdcd44109e6c3664d1217c42bc25417a9421498'
+  const keyPu = "1819332dc7d58586ce9a9bc528e0b7b2";
+  const keyPr = "fbdcd44109e6c3664d1217c42bc25417a9421498";
   const hash = md5(time + keyPr + keyPu);
 
-  // async function htt(jsonParsed: string) {
-  //   const data = await fetch(`https://gateway.marvel.com:443/v1/public/characters?limit=6&ts=${time}&apikey=${keyPu}&hash=${hash}`
-  //   ).then((response) => {
-  //     return response.json();
-  //   }).then((jsonParsed) => {
-  //     console.log(jsonParsed);
-  //   })
-  //   // console.log(data)
-  // }
-
   
-  // const data = fetch(`https://gateway.marvel.com:443/v1/public/characters?limit=6&ts=${time}&apikey=${keyPu}&hash=${hash}`
-  // ).then((response) => {
-  //   return response.json();
-  // }).then((jsonParsed:string) => {
-  //   console.log(jsonParsed);
-  // })
+  const [data, setData] = useState([]);
+  async function logDa() {
+    const response = await fetch (
+      `https://gateway.marvel.com:443/v1/public/characters?limit=6&ts=${time}&apikey=${keyPu}&hash=${hash}`
+    );
+    const json = await response.json()
 
-  // console.log(data)
-
-
-
-  const ap = async () => {
-    const data = await fetch(`https://gateway.marvel.com:443/v1/public/characters?limit=6&ts=${time}&apikey=${keyPu}&hash=${hash}`)
-
-    return data;
+    return json.data.results;
   }
 
-  const {data} = ap
-
-  console.log(data)
+  useEffect(() => {
+    logDa()
+      .then((fetchedData) => {
+        setData(fetchedData);
+      })
+      .catch((error) => {
+        console.error("Erro de busca:", error);
+      });
+  }, [])
 
   return (
     <Bg>
-      {/* {data
-      .map(item => (
-        <div>
-          <p>`${item.id}`</p>
+      {data.map((item) => (
+        <div key={item.id}>
+          <p>{item.name}</p>
         </div>
-      ))} */}
-      <p>
-        asdd
-      </p>
+      ))}
     </Bg>
-  );
+  )
 }
