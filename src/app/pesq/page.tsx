@@ -29,15 +29,16 @@ export default function Aaa() {
     console.log(jsonParsed);
   })
 
+  console.log(data)
 
   return (
     <Bg>
-      {data
+      {/* {data
       .map(item => (
         <div>
           <p>`${item.id}`</p>
         </div>
-      ))}
+      ))} */}
       <p>
         asdd
       </p>
