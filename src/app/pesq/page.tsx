@@ -16,7 +16,7 @@ export default function Prin() {
   const [data, setData] = useState([]);
   async function logDa() {
     const response = await fetch (
-      `https://gateway.marvel.com:443/v1/public/characters?limit=6&ts=${time}&apikey=${keyPu}&hash=${hash}`
+      `https://gateway.marvel.com:443/v1/public/characters?limit=15&ts=${time}&apikey=${keyPu}&hash=${hash}`
     );
     const json = await response.json()
 
