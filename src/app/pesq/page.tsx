@@ -22,12 +22,24 @@ export default function Aaa() {
   // }
 
   
-  const data = fetch(`https://gateway.marvel.com:443/v1/public/characters?limit=6&ts=${time}&apikey=${keyPu}&hash=${hash}`
-  ).then((response) => {
-    return response.json();
-  }).then((jsonParsed:string) => {
-    console.log(jsonParsed);
-  })
+  // const data = fetch(`https://gateway.marvel.com:443/v1/public/characters?limit=6&ts=${time}&apikey=${keyPu}&hash=${hash}`
+  // ).then((response) => {
+  //   return response.json();
+  // }).then((jsonParsed:string) => {
+  //   console.log(jsonParsed);
+  // })
+
+  // console.log(data)
+
+
+
+  const ap = async () => {
+    const data = await fetch(`https://gateway.marvel.com:443/v1/public/characters?limit=6&ts=${time}&apikey=${keyPu}&hash=${hash}`)
+
+    return data;
+  }
+
+  const {data} = ap
 
   console.log(data)
 
