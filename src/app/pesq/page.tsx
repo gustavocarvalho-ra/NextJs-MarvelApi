@@ -12,7 +12,6 @@ export default function Prin() {
   const keyPr = "fbdcd44109e6c3664d1217c42bc25417a9421498";
   const hash = md5(time + keyPr + keyPu);
 
-  
   const [data, setData] = useState([]);
   async function logDa() {
     const response = await fetch (
@@ -22,6 +21,9 @@ export default function Prin() {
 
     return json.data.results;
   }
+
+  console.log(time)
+
 
   useEffect(() => {
     logDa()
@@ -38,6 +40,7 @@ export default function Prin() {
       {data.map((item) => (
         <div key={item.id}>
           <p className="nam">{item.name}</p>
+          <Image src={item.thumbnail} key={item.thumbnail} alt="Image of Caracter" width={50} height={50}></Image>
         </div>
       ))}
     </Bg>
