@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 import { Man } from "./styles"; 
+import { IoSearch } from "react-icons/io5";
+
 
 export default function Home() {
 
@@ -14,7 +16,8 @@ export default function Home() {
           <h1>MARVEL <span>CHARACTERS</span></h1>
           <Link className="hel" href={'/pesq'}>
             <button>
-              Ir para busca
+              Go search
+              <IoSearch />
             </button>
           </Link>
         </div>
