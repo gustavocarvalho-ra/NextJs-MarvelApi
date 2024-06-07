@@ -24,16 +24,30 @@ export default function Prin() {
 
   console.log(time)
 
+  type ResponseData = {
+    id: string;
+    name: string;
+    description: string;
+    thumbnail: {
+      path: string;
+      extension: string;
+    };
+  }
 
-  useEffect(() => {
-    logDa()
-      .then((fetchedData) => {
-        setData(fetchedData);
-      })
-      .catch((error) => {
-        console.error("Erro de busca:", error);
-      });
-  }, [])
+  // const Caracters: React.FC = (ResponseData[id]) => {
+    const [ty, setTy] = useState<ResponseData[]>([]);
+
+    useEffect(() => {
+      logDa()
+        .then((fetchedData) => {
+          setData(fetchedData);
+        })
+        .catch((error) => {
+          console.error("Erro de busca:", error);
+        });
+    }, [])
+  // }
+
 
   return (
     <Bg>
