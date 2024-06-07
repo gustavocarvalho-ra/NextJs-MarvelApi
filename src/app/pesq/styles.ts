@@ -4,20 +4,21 @@ import api from './../../services/api';
 export const Bg = styled.section `
   max-width: 100vw;
   height: 130vh;
-  background: rgb(3, 4, 10);
+  background: #03040a;
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 
 
   .card {
     width: 230px;
-    height: 400px;
+    height: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
-    background-color: aqua;
+    background-color: #04091f;
 
 
     img {
