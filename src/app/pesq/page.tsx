@@ -1,10 +1,12 @@
 "use client"
+import api from "@/services/api";
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import md5 from "md5";
 
 import { Bg } from "./styles";
+import { ApiError } from "next/dist/server/api-utils";
 
 export default function Prin() {
   const time = Number(new Date());
@@ -22,28 +24,27 @@ export default function Prin() {
     };
   }
 
-  const [data, setData] = useState<ResponseData[]>([]);
+
   async function logDa() {
     const response = await fetch (
-      `https://gateway.marvel.com:443/v1/public/characters?limit=15&ts=${time}&apikey=${keyPu}&hash=${hash}`
+      `https://gateway.marvel.com:443/v1/public/characters?limit=20&ts=${time}&apikey=${keyPu}&hash=${hash}`
     );
     const json = await response.json()
 
     return json.data.results;
   }
 
-  console.log(time)
+  const [data, setData] = useState<ResponseData[]>([]);
 
-    useEffect(() => {
-      logDa()
-        .then((fetchedData) => {
-          setData(fetchedData);
-        })
-        .catch((error) => {
-          console.error("Erro de busca:", error);
-        });
-    }, [])
-  // }
+  useEffect(() => {
+    logDa()
+      .then((fetchedData) => {
+        setData(fetchedData);
+      })
+      .catch((error) => {
+        console.error("Erro de busca:", error);
+      });
+  }, [])
 
   return (
     <Bg>
