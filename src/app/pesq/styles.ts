@@ -2,10 +2,11 @@ import styled from "styled-components";
 import api from './../../services/api';
 
 export const Bg = styled.section `
-  width: 100vw;
-  height: 94vh;
+  max-width: 100vw;
+  height: 130vh;
   background: rgb(3, 4, 10);
   display: flex;
+  flex-wrap: wrap;
 
 
   .card {
