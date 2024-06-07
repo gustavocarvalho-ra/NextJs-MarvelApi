@@ -16,8 +16,8 @@ export default function Home() {
           <h1>MARVEL <span>CHARACTERS</span></h1>
           <Link className="hel" href={'/pesq'}>
             <button>
-              Go search
-              <IoSearch />
+              Go search <br/>
+              <IoSearch style={{marginTop: 13}}/>
             </button>
           </Link>
         </div>
