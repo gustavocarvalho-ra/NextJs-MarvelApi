@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import api from './../../services/api';
 
 export const Bg = styled.section `
   width: 100vw;
@@ -7,14 +8,23 @@ export const Bg = styled.section `
   display: flex;
 
 
-  .cardOf {
-    width: 200px;
-    height: 300px;
+  .card {
+    width: 230px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: aqua;
+
 
     img {
-      width: 200px;
-      height: 200px;
+      width: 220px;
+      height: 220px;
+      border-radius: 8px;
     }
+
     .nam {
       color: wheat;
     }

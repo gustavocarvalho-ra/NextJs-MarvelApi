@@ -39,8 +39,10 @@ export default function Prin() {
     <Bg>
       {data.map((item) => (
         <div key={item.id} className="cardOf">
-          <p className="nam">{item.name}</p>
-          <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Image of Caracter" width={50} height={50} />
+          <div className="card">
+            <p className="nam">{item.name}</p>
+            <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Image of Caracter" />
+          </div>
         </div>
       ))}
     </Bg>
