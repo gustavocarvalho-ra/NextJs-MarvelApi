@@ -1,5 +1,5 @@
 "use client"
-import api from "@/services/temp";
+// import api from "@/services/temp";
 
 import { ApiError } from "next/dist/server/api-utils";
 import { useEffect, useState } from "react";
@@ -26,7 +26,7 @@ export default function Prin() {
   }
 
 
-  async function logDa() {
+  async function logData() {
     const response = await fetch (
       `https://gateway.marvel.com:443/v1/public/characters?limit=20&ts=${time}&apikey=${keyPu}&hash=${hash}`
     );
@@ -38,7 +38,7 @@ export default function Prin() {
   const [data, setData] = useState<ResponseData[]>([]);
 
   useEffect(() => {
-    logDa()
+    logData()
       .then((fetchedData) => {
         setData(fetchedData);
       })
