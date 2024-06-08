@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import api from '../../services/temp';
 
 export const Bg = styled.section `
   max-width: 100vw;
