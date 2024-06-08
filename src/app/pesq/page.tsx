@@ -1,12 +1,13 @@
 "use client"
-import api from "@/services/api";
+import api from "@/services/temp";
 
+import { ApiError } from "next/dist/server/api-utils";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import md5 from "md5";
 
 import { Bg } from "./styles";
-import { ApiError } from "next/dist/server/api-utils";
+
 
 export default function Prin() {
   const time = Number(new Date());
