@@ -11,6 +11,8 @@ export const Foo = styled.div `
     display: flex;
     justify-content: center;
 
-    
+    h3 {
+      color: white;
+    }
   }
 `
