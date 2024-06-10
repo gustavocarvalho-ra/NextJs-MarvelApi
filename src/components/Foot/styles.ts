@@ -16,6 +16,10 @@ export const Foo = styled.div `
     h3 {
       font-size: 14px;
       color: white;
+
+      Link {
+        
+      }
     }
   }
 `
