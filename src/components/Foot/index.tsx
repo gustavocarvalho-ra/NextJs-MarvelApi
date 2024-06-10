@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Foo } from "./styles"; 
 
 
-export default function Home() {
+export default function Foot() {
 
   return (
     <Foo>

@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 
 import Header from "@/components/Header";
+import Foot from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], weight: "400" });
 
@@ -23,6 +24,7 @@ export default function LayoutOff({
         <body className={inter.className}>{children}
         </body>
       </html>
+      <Foot />
     </>
   );
 }
