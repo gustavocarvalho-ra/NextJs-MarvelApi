@@ -17,10 +17,6 @@ export const Foo = styled.div `
       font-size: 12px;
       font-weight: 400;
       color: white;
-
-      Link {
-        
-      }
     }
   }
 `
