@@ -21,8 +21,8 @@ export default function Foot() {
           <h3>
             Redes para contato:
           </h3>
-          <Link href={"https://github.com/gustavocarvalho-ra"} target="_blank"> <FaGithub style={{fontSize: '20px', marginLeft: '5px', color: '#fff' }}/></Link> 
-          <Link href={"https://www.linkedin.com/in/gustavo-carvalho-7bb361205/"} target="_blank"><SiLinkedin style={{fontSize: '20px', marginLeft: '15px', color: '#fff'}}/></Link>
+          <Link href={"https://github.com/gustavocarvalho-ra"} target="_blank"> <FaGithub style={{fontSize: '18px', marginLeft: '5px', color: '#fff' }}/></Link> 
+          <Link href={"https://www.linkedin.com/in/gustavo-carvalho-7bb361205/"} target="_blank"><SiLinkedin style={{fontSize: '18px', marginLeft: '15px', color: '#fff'}}/></Link>
         </div>
       </div>
     </Foo>
