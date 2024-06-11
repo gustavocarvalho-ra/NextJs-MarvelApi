@@ -17,7 +17,7 @@ export default function Foot() {
           Desenvoldido por: Gustavo
         </h3>
         <h3>
-          Redes: 
+          Redes para contato: 
           <Link href={"https://github.com/gustavocarvalho-ra"} target="_blank"><FaGithub /></Link> 
           <Link href={"https://www.linkedin.com/in/gustavo-carvalho-7bb361205/"} target="_blank"><SiLinkedin /></Link>
         </h3>

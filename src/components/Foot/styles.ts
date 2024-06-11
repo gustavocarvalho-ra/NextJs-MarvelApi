@@ -11,10 +11,10 @@ export const Foo = styled.div `
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1F0409    ;
+    background-color: #1F0409;
 
     h3 {
-      font-size: 14px;
+      font-size: 10px;
       color: white;
 
       Link {
