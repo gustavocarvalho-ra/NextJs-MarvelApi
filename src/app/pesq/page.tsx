@@ -49,7 +49,6 @@ export default function Prin() {
 
   return (
     <Bg>
-      <Link href="/sear">search</Link>
       <BgFix>
         {data.map((item) => (
           <div key={item.id} className="cardOf">
@@ -60,7 +59,7 @@ export default function Prin() {
               <div className="desc">
                 <p className="nam"><span>Name:</span> {item.name}</p>
                 <p className="description"><span>Description:</span> <br/>
-                  {item.description}
+                  {item.description ? item.description : 'Personagem sem descrição na Api'}
                 </p>
               </div>
             </div>
