@@ -8,14 +8,15 @@ export const Bg = styled.section `
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+`
 
-  .bgFix {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+export const BgFix = styled.div `
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
 
   .card {
     width: 680px;
@@ -41,23 +42,22 @@ export const Bg = styled.section `
     }
 
     .desc{
+      height: 100%;
       display: flex;
-      color: wheat;
+      color: #d7d7d7;
       flex-direction: column;
       gap: 1rem;
       margin-left: 1.5rem;
+
+      .nam {
+        top: 1rem;
+        position: relative;
+        margin-bottom: 1.7rem;
+      }
 
       .description{
         font-size: 12px;
       }
     }
   }
-`
-
-export const BgFix = styled.div `
-  width: 90vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
 `

@@ -57,7 +57,9 @@ export default function Prin() {
               </div>
               <div className="desc">
                 <p className="nam">Name: {item.name}</p>
-                <p className="description">Description: {item.description}</p>
+                <p className="description">Description: <br/>
+                  {item.description}
+                </p>
               </div>
             </div>
           </div>
