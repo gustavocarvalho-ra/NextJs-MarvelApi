@@ -56,8 +56,8 @@ export default function Prin() {
                 <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Image of Caracter" />
               </div>
               <div className="desc">
-                <p className="nam">Name: {item.name}</p>
-                <p className="description">Description: <br/>
+                <p className="nam"><span>Name:</span> {item.name}</p>
+                <p className="description"><span>Description:</span> <br/>
                   {item.description}
                 </p>
               </div>
