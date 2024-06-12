@@ -10,19 +10,18 @@ export const Bg = styled.section `
 
 
   .card {
-    width: 230px;
-    height: 360px;
+    width: 800px;
+    height: 200px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     border-radius: 8px;
     background-color: #04091f;
 
 
     img {
-      width: 220px;
-      height: 220px;
+      width: 180px;
+      height: 180px;
       border-radius: 8px;
     }
 
