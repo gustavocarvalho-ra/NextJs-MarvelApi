@@ -19,7 +19,7 @@ export const BgFix = styled.div `
   gap: 1.5rem;
 
   .card {
-    width: 720px;
+    width: 750px;
     height: 200px;
     display: flex;
     align-items: center;
