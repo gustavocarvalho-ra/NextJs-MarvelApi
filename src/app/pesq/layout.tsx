@@ -7,9 +7,8 @@ import Foot from "@/components/Foot";
 const Inter = Poppins({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
-  title: "L_v2",
-  description: "Loja de roupas",
-  
+  title: "Marvel API",
+  description: "Marvel API",
 };
 
 export default function LayoutOff({
@@ -19,12 +18,13 @@ export default function LayoutOff({
 }>) {
   return (
     <>
-      <Header />
       <html lang="en">
-        <body className={Inter.className}>{children}
+        <body className={Inter.className}>
+          <Header />
+            {children}
+          <Foot />
         </body>
       </html>
-      <Foot />
     </>
   );
 }
