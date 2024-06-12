@@ -27,16 +27,24 @@ export const Bg = styled.section `
     background-color: #04091f;
 
 
-    img {
+    .imge{
       width: 180px;
       height: 180px;
+      display: flex;
+      justify-content: center;
       border-radius: 8px;
+      
+      img {
+        width: 180px;
+        height: 180px;
+        border-radius: 8px;
+      }
     }
 
     .desc{
       display: flex;
-      flex-direction: column;
       color: wheat;
+      flex-direction: column;
       gap: 1rem;
       margin-left: 1.5rem;
 
