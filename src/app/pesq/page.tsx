@@ -3,7 +3,6 @@
 
 import { ApiError } from "next/dist/server/api-utils";
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import md5 from "md5";
 
 import { Bg } from "./styles";
@@ -53,7 +52,8 @@ export default function Prin() {
         <div key={item.id} className="cardOf">
           <div className="card">
             <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Image of Caracter" />
-            <p className="nam">{item.name}</p>
+            <p className="nam">Name: {item.name}</p>
+            <p className="description">Description: {item.description}</p>
           </div>
         </div>
       ))}

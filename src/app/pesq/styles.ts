@@ -14,6 +14,7 @@ export const Bg = styled.section `
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .card {
