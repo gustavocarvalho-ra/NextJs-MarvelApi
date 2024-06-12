@@ -5,9 +5,9 @@ import "./globals.css";
 const inter = Poppins({ subsets: ["latin"], weight: "900" });
 
 export const metadata: Metadata = {
-  title: "L_v2",
+  title: "Marvel API",
   icons: "./favicon.ico",
-  description: "Loja de roupas",
+  description: "Marvel API",
 };
 
 export default function RootLayout({
