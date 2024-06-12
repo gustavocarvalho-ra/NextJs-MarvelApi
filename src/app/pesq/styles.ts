@@ -33,8 +33,16 @@ export const Bg = styled.section `
       border-radius: 8px;
     }
 
-    .nam {
+    .desc{
+      display: flex;
+      flex-direction: column;
       color: wheat;
+      gap: 1rem;
+      margin-left: 1.5rem;
+
+      .description{
+        font-size: 12px;
+      }
     }
   }
 `
