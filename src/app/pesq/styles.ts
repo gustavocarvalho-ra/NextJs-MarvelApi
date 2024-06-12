@@ -9,8 +9,8 @@ export const Bg = styled.section `
   justify-content: center;
   gap: 10px;
 
-  .cardOf {
-    width: 90vw;
+  .bgFix {
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -26,14 +26,13 @@ export const Bg = styled.section `
     border-radius: 8px;
     background-color: #04091f;
 
-
     .imge{
       width: 180px;
       height: 180px;
       display: flex;
       justify-content: center;
       border-radius: 8px;
-      
+
       img {
         width: 180px;
         height: 180px;
@@ -53,4 +52,12 @@ export const Bg = styled.section `
       }
     }
   }
+`
+
+export const BgFix = styled.div `
+  width: 90vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 `

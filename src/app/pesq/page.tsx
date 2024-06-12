@@ -5,7 +5,7 @@ import { ApiError } from "next/dist/server/api-utils";
 import { useEffect, useState } from "react";
 import md5 from "md5";
 
-import { Bg } from "./styles";
+import { Bg, BgFix } from "./styles";
 
 
 export default function Prin() {
@@ -48,19 +48,21 @@ export default function Prin() {
 
   return (
     <Bg>
-      {data.map((item) => (
-        <div key={item.id} className="cardOf">
-          <div className="card">
-            <div className="imge">
-              <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Image of Caracter" />
-            </div>
-            <div className="desc">
-              <p className="nam">Name: {item.name}</p>
-              <p className="description">Description: {item.description}</p>
+      <BgFix>
+        {data.map((item) => (
+          <div key={item.id} className="cardOf">
+            <div className="card">
+              <div className="imge">
+                <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Image of Caracter" />
+              </div>
+              <div className="desc">
+                <p className="nam">Name: {item.name}</p>
+                <p className="description">Description: {item.description}</p>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </BgFix>
     </Bg>
   )
 }
