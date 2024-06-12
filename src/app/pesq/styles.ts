@@ -2,15 +2,22 @@ import styled from "styled-components";
 
 export const Bg = styled.section `
   max-width: 100vw;
-  height: 130vh;
+  height: 100%;
   background: #03040a;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  justify-content: center;
+  gap: 10px;
 
+  .cardOf {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
   .card {
-    width: 800px;
+    width: 680px;
     height: 200px;
     display: flex;
     align-items: center;
