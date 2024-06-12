@@ -33,6 +33,7 @@ export const BgFix = styled.div `
       display: flex;
       justify-content: center;
       border-radius: 8px;
+      margin-left: 1.5rem;
 
       img {
         width: 180px;
