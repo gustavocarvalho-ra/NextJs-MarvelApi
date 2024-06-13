@@ -17,11 +17,11 @@ export default function Foot() {
           Desenvoldido por: Gustavo
         </h3>
 
-        <div style={{display: 'flex', alignItems: 'center'}}>
+        <div style={{display: 'flex', alignItems: 'center', height: '100%'}}>
           <h3>
             Redes para contato:
           </h3>
-          <Link href={"https://github.com/gustavocarvalho-ra"} target="_blank"> <FaGithub style={{fontSize: '18px', marginLeft: '5px', color: '#fff' }}/></Link> 
+          <Link href={"https://github.com/gustavocarvalho-ra"} target="_blank"> <FaGithub style={{fontSize: '18px', marginLeft: '15px', color: '#fff' }}/></Link> 
           <Link href={"https://www.linkedin.com/in/gustavo-carvalho-7bb361205/"} target="_blank"><SiLinkedin style={{fontSize: '18px', marginLeft: '15px', color: '#fff'}}/></Link>
         </div>
       </div>
