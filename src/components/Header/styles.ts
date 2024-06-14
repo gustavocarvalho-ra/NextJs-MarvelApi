@@ -5,6 +5,6 @@ export const A = styled.div `
   height: 6vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background: #ed1a23;
 `

@@ -9,6 +9,7 @@ export default function Header() {
     <A>
       <Link href={'/'}>
         <Image src={"/logo.png"} alt="Logo image" width={110} height={60}></Image>
+        <input type="text">Search</input>
       </Link>
     </A>
   )
