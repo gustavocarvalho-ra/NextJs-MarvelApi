@@ -1,12 +1,10 @@
 "use client"
-// import api from "@/services/temp";
 
-import { ApiError } from "next/dist/server/api-utils";
 import { useEffect, useState } from "react";
 import md5 from "md5";
 
+import { ResponseData } from "../interfaces/type";
 import { Bg, BgFix } from "./styles";
-import Link from 'next/link';
 
 
 export default function Prin() {
@@ -15,15 +13,15 @@ export default function Prin() {
   const keyPr = "fbdcd44109e6c3664d1217c42bc25417a9421498";
   const hash = md5(time + keyPr + keyPu);
 
-  type ResponseData = {
-    id: string;
-    name: string;
-    description: string;
-    thumbnail: {
-      path: string;
-      extension: string;
-    };
-  }
+  // type ResponseData = {
+  //   id: string;
+  //   name: string;
+  //   description: string;
+  //   thumbnail: {
+  //     path: string;
+  //     extension: string;
+  //   };
+  // }
 
 
   async function logData() {
