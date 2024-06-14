@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import md5 from "md5";
 
-import { ResponseData } from "../interfaces/type";
+import { ResponseData } from "../interfaces/types";
 import { Bg, BgFix } from "./styles";
 
 
