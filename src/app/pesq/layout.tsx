@@ -2,7 +2,7 @@ import { Poppins } from "next/font/google";
 import type { Metadata } from "next";
 
 import Header from "@/components/Header";
-import Foot from "@/components/Foot";
+import Footer from "@/components/Footer";
 
 const Inter = Poppins({ subsets: ["latin"], weight: "400" });
 
@@ -22,7 +22,7 @@ export default function LayoutOff({
         <body className={Inter.className}>
           <Header />
             {children}
-          <Foot />
+          <Footer />
         </body>
       </html>
     </>
