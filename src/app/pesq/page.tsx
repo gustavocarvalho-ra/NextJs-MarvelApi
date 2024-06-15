@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import md5 from "md5";
 
+// import { api } from "@/services/temp";
 import { ResponseData } from "../interfaces/types";
 import { Bg, BgFix } from "./styles";
 import Header from "@/components/Header";

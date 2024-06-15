@@ -4,6 +4,8 @@ import styled from "styled-components";
 export const Foo = styled.div `
   width: 100%;
   height: 4vh;
+  position: fixed;
+  bottom: 0;
 
   .container {
     width: 100%;

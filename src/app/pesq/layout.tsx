@@ -1,9 +1,6 @@
 import { Poppins } from "next/font/google";
 import type { Metadata } from "next";
 
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-
 const Inter = Poppins({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
@@ -18,7 +15,7 @@ export default function LayoutOff({
 }>) {
   return (
     <div className={Inter.className}>
-        {children}
+      {children}
     </div>
   );
 }

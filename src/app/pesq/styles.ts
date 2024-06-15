@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Bg = styled.section `
   max-width: 100vw;
-  height: 100%;
+  min-height: 100vh;
   background: #03040a;
   display: flex;
   flex-wrap: wrap;
