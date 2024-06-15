@@ -18,7 +18,7 @@ export default function Home() {
           <Link className="hel" href={'/pesq'}>
             <button>
               Go search <br/>
-              <IoSearch style={{marginTop: 13}}/>
+              <IoSearch style={{marginTop: 6}}/>
             </button>
           </Link>
         </div>
