@@ -15,37 +15,20 @@ export default function Prin() {
   const keyPr = "fbdcd44109e6c3664d1217c42bc25417a9421498";
   const hash = md5(time + keyPr + keyPu);
 
-  // type ResponseData = {
-  //   id: string;
-  //   name: string;
-  //   description: string;
-  //   thumbnail: {
-  //     path: string;
-  //     extension: string;
-  //   };
-  // }
-
   const [search, setSearch] = useState<string>("")
 
-
-
-
+  const [data, setData] = useState<ResponseData[]>([]);
 
   async function logData() {
-
-  const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${search}&limit=20&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/characters?limit=20&ts=${time}&apikey=${keyPu}&hash=${hash}` 
+    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${search}&limit=20&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/characters?limit=20&ts=${time}&apikey=${keyPu}&hash=${hash}`
 
     const response = await fetch (
       test
     );
 
     const json = await response.json()
-
     return json.data.results;
   }
-
-
-  const [data, setData] = useState<ResponseData[]>([]);
 
   useEffect(() => {
     logData()
@@ -58,8 +41,6 @@ export default function Prin() {
   }, [search])
 
   // debounce
-
-
 
   console.log(search)
   return (
