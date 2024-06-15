@@ -5,6 +5,8 @@ import md5 from "md5";
 
 import { ResponseData } from "../interfaces/types";
 import { Bg, BgFix } from "./styles";
+import Header from "@/components/Header";
+import Footer  from '@/components/Footer';
 
 
 export default function Prin() {
@@ -23,15 +25,25 @@ export default function Prin() {
   //   };
   // }
 
+  const [search, setSearch] = useState<string>("")
+
+
+
+
 
   async function logData() {
+
+  const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${search}&limit=20&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/characters?limit=20&ts=${time}&apikey=${keyPu}&hash=${hash}` 
+
     const response = await fetch (
-      `https://gateway.marvel.com:443/v1/public/characters?limit=20&ts=${time}&apikey=${keyPu}&hash=${hash}`
+      test
     );
+
     const json = await response.json()
 
     return json.data.results;
   }
+
 
   const [data, setData] = useState<ResponseData[]>([]);
 
@@ -43,27 +55,37 @@ export default function Prin() {
       .catch((error) => {
         console.error("Erro de busca:", error);
       });
-  }, [])
+  }, [search])
 
+  // debounce
+
+
+
+  console.log(search)
   return (
-    <Bg>
-      <BgFix>
-        {data.map((item) => (
-          <div key={item.id} className="cardOf">
-            <div className="card">
-              <div className="imge">
-                <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Image of Caracter" />
-              </div>
-              <div className="desc">
-                <p className="nam"><span>Name:</span> {item.name}</p>
-                <p className="description"><span>Description:</span> <br/>
-                  {item.description ? item.description : 'Personagem sem descrição na Api'}
-                </p>
+    <>
+      <Header />
+      <Bg>
+        <BgFix>
+          <input type="text" defaultValue={search} onChange={(e) => setSearch(e.target.value)}/>
+          {data.map((item) => (
+            <div key={item.id} className="cardOf">
+              <div className="card">
+                <div className="imge">
+                  <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Image of Caracter" />
+                </div>
+                <div className="desc">
+                  <p className="nam"><span>Name:</span> {item.name}</p>
+                  <p className="description"><span>Description:</span> <br/>
+                    {item.description ? item.description : 'Personagem sem descrição na Api'}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
-      </BgFix>
-    </Bg>
+          ))}
+        </BgFix>
+      </Bg>
+      <Footer />
+    </>
   )
 }

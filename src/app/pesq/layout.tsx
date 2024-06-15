@@ -17,14 +17,8 @@ export default function LayoutOff({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-      <html lang="en">
-        <body className={Inter.className}>
-          <Header />
-            {children}
-          <Footer />
-        </body>
-      </html>
-    </>
+    <div className={Inter.className}>
+        {children}
+    </div>
   );
 }
