@@ -49,7 +49,9 @@ export default function Prin() {
       <Header />
       <Bg>
         <BgFix>
-          <input type="text" defaultValue={search} onChange={(e) => setSearch(e.target.value)}/>
+          <div className="inPut">
+            <input className="inp" type="text" defaultValue={search} onChange={(e) => setSearch(e.target.value)}/>
+          </div>
           {data.map((item) => (
             <div key={item.id} className="cardOf">
               <div className="card">

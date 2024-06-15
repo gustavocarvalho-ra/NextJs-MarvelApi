@@ -18,6 +18,16 @@ export const BgFix = styled.div `
   justify-content: space-between;
   gap: 1.5rem;
 
+  .inPut {
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    just
+    .inp {
+      width: 20%;
+    }
+  }
+
   .card {
     width: 750px;
     height: 200px;
