@@ -17,14 +17,16 @@ export const BgFix = styled.div `
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1.5rem;
+  margin: 2rem 0;
 
   .inPut {
     width: 100%;
     height: 3vh;
     display: flex;
-    just
+    justify-content: center;
+    
     .inp {
-      width: 20%;
+      width: 180px;
     }
   }
 
