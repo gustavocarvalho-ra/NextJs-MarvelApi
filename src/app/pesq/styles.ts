@@ -24,9 +24,14 @@ export const BgFix = styled.div `
     height: 3vh;
     display: flex;
     justify-content: center;
+
+    .h3 {
+      color: #fff;
+    }
     
     .inp {
       width: 180px;
+      margin-left: 1em;
     }
   }
 

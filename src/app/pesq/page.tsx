@@ -21,7 +21,7 @@ export default function Prin() {
   const [data, setData] = useState<ResponseData[]>([]);
 
   async function logData() {
-    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${search}&limit=20&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/characters?limit=20&ts=${time}&apikey=${keyPu}&hash=${hash}`
+    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${search}&limit=30&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/characters?limit=20&ts=${time}&apikey=${keyPu}&hash=${hash}`
 
     const response = await fetch (
       test
@@ -50,6 +50,7 @@ export default function Prin() {
       <Bg>
         <BgFix>
           <div className="inPut">
+            <h3 className="h3">Search character: </h3>
             <input className="inp" type="text" defaultValue={search} onChange={(e) => setSearch(e.target.value)}/>
           </div>
           {data.map((item) => (
