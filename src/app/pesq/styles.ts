@@ -69,6 +69,7 @@ export const BgFix = styled.div `
 
       span {
         color: red;
+        font-weight: 400;
       }
 
       .nam {
