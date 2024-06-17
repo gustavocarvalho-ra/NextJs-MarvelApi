@@ -23,6 +23,8 @@ export const BgFix = styled.div `
     width: 100%;
     height: 3vh;
     display: flex;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
 
     .h3 {
