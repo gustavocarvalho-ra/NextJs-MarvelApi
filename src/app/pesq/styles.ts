@@ -39,8 +39,9 @@ export const BgFix = styled.div `
       /* display: flex;
       align-items: center; */
       margin-bottom: 1rem;
-      background-color: rgba(255, 255, 255, 0.1);
-      border: none;
+      background-color: rgba(255, 255, 255, 0.09);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 8px;
     }
   }
 
