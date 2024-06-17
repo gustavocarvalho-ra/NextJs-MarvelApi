@@ -29,10 +29,12 @@ export const BgFix = styled.div `
 
     .h3 {
       color: #fff;
+      font-size: 22px;
     }
     
     .inp {
       width: 180px;
+      margin-bottom: 1rem;
     }
   }
 
