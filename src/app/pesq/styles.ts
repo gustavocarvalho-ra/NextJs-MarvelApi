@@ -13,8 +13,8 @@ export const Bg = styled.section `
 export const BgFix = styled.div `
   width: 90vw;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   gap: 1.5rem;
   margin: 2rem 0;
@@ -33,7 +33,6 @@ export const BgFix = styled.div `
     
     .inp {
       width: 180px;
-      margin-left: 1em;
     }
   }
 
