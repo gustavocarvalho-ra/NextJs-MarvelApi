@@ -43,7 +43,7 @@ export const BgFix = styled.div `
       background-color: rgba(255, 255, 255, 0.09);
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 8px;
-      margin-bottom: 1rem;
+      margin: 10px 0 1rem 0;
     }
   }
 
