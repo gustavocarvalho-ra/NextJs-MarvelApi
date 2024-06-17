@@ -21,11 +21,12 @@ export const BgFix = styled.div `
 
   .inPut {
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    margin-top: 1rem;
     
     .h3 {
       color: #fff;
@@ -35,13 +36,14 @@ export const BgFix = styled.div `
     .inp {
       width: 180px;
       height: 2rem;
+      text-align: center;
       color: #fff;
-      /* display: flex;
-      align-items: center; */
-      margin-bottom: 1rem;
+      font-size: 14px;
+      text-transform: uppercase;
       background-color: rgba(255, 255, 255, 0.09);
       border: 1px solid rgba(255, 255, 255, 0.5);
       border-radius: 8px;
+      margin-bottom: 1rem;
     }
   }
 
