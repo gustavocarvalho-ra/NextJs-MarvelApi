@@ -34,6 +34,8 @@ export const BgFix = styled.div `
     
     .inp {
       width: 180px;
+      /* display: flex;
+      align-items: center; */
       margin-bottom: 1rem;
     }
   }
