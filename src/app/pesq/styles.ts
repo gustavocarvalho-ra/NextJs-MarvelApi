@@ -17,16 +17,16 @@ export const BgFix = styled.div `
   flex-direction: row;
   justify-content: space-between;
   gap: 1.5rem;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 
   .inPut {
     width: 100%;
-    height: 3vh;
+    height: 15vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-
+    
     .h3 {
       color: #fff;
       font-size: 22px;
@@ -34,9 +34,13 @@ export const BgFix = styled.div `
     
     .inp {
       width: 180px;
+      height: 2rem;
+      color: #fff;
       /* display: flex;
       align-items: center; */
       margin-bottom: 1rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
     }
   }
 
