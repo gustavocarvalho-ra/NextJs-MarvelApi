@@ -49,7 +49,7 @@ export const Man = styled.div `
     .options{
       display: flex;
       .hel {
-        width: 300px;
+        width: 250px;
         height: 100px;
         align-content: center;
         justify-content: center;
@@ -65,6 +65,11 @@ export const Man = styled.div `
           border: 1px solid rgba(255, 255, 255, 0.3);
           border-radius: 16px;
           cursor: pointer;
+          transition: all .6s;
+
+          &:hover {
+            opacity: .5;
+          }
         }
       }
     }
