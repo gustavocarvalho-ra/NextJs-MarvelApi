@@ -10,7 +10,7 @@ import Header from "@/components/Header";
 import Footer  from '@/components/Footer';
 
 
-export default function Prin() {
+export default function Comi() {
   const time = Number(new Date());
   const keyPu = "1819332dc7d58586ce9a9bc528e0b7b2";
   const keyPr = "fbdcd44109e6c3664d1217c42bc25417a9421498";
