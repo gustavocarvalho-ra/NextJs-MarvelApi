@@ -48,6 +48,7 @@ export const Man = styled.div `
   
     .options{
       display: flex;
+      gap: 2.5rem;
       .hel {
         width: 250px;
         height: 100px;
