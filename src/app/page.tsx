@@ -13,8 +13,11 @@ export default function Home() {
   return (
     <Man>
       <div className="bac">
-        <div className="container">
-          <h1>MARVEL <span>CHARACTERS</span></h1>
+        <div className="content">
+          <div className="title">
+            <h1>MARVEL <span>CHARACTERS</span></h1>
+          </div>
+          
           <section className="options">
             <Link className="hel" href={'/pesq'}>
               <button>
@@ -22,7 +25,7 @@ export default function Home() {
                 <IoSearch style={{marginTop: 6}}/>
               </button>
             </Link>
-            
+
             <Link className="hel" href={'/comic'}>
               <button>
                 Go comics <br/>
@@ -31,7 +34,6 @@ export default function Home() {
             </Link>
           </section>
         </div>
-
         <Image className="bg" src={"/nest.png"} alt="test" fill={true} />
       </div>
     </Man>
