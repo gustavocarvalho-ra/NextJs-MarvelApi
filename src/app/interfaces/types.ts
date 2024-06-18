@@ -1,4 +1,4 @@
-export interface ResponseData {
+export interface CaractersData {
   id: string;
   name: string;
   description: string;

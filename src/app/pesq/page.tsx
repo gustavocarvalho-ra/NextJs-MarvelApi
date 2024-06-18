@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import md5 from "md5";
 
 // import { api } from "@/services/temp";
-import { ResponseData } from "../interfaces/types";
+import { CaractersData } from "../interfaces/types";
 import { Bg, BgFix } from "./styles";
 import Header from "@/components/Header";
 import Footer  from '@/components/Footer';
@@ -18,7 +18,7 @@ export default function Prin() {
 
   const [search, setSearch] = useState<string>("")
 
-  const [data, setData] = useState<ResponseData[]>([]);
+  const [data, setData] = useState<CaractersData[]>([]);
 
   async function logData() {
     const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${search}&limit=30&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/characters?limit=20&ts=${time}&apikey=${keyPu}&hash=${hash}`
