@@ -9,9 +9,12 @@ export interface CaractersData {
 }
 
 export interface ComicsData {
+  id: string;
   title: string;
   price: number;
   textObjects: {
+    type: string;
+    language: string;
     text: string;
   }
   thumbnail: {
