@@ -7,3 +7,15 @@ export interface CaractersData {
     extension: string;
   };
 }
+
+export interface ComicsData {
+  title: string;
+  price: number;
+  textObjects: {
+    text: string;
+  }
+  thumbnail: {
+    path: string;
+    extension: string;
+  };
+}
