@@ -61,7 +61,7 @@ export default function Comi() {
                 </div>
                 <div className="desc">
                   <p className="nam"><span>Name:</span> {item.title}</p>
-                  <p className="nam"><span>Price:</span> {item.prices.price}</p>
+                  <p className="nam"><span>Price:</span> {`${item.prices.type}.${item.prices.price}`} </p>
                   <p className="description"><span>Description:</span> <br/>
                     {item.textObjects.text}
                   </p>
