@@ -13,7 +13,7 @@ export interface ComicsData {
   title: string;
   prices: {
     type: string;
-    price: number; 
+    price: string; 
   }
   textObjects: {
     type: string;
