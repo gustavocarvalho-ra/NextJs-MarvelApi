@@ -15,20 +15,20 @@ export default function Home() {
       <div className="bac">
         <div className="content">
           <div className="title">
-            <h1>MARVEL <span>CHARACTERS</span></h1>
+            <h1>MARVEL <span>API</span></h1>
           </div>
           
           <section className="options">
             <Link className="hel" href={'/pesq'}>
               <button>
-                Go search <br/>
+                Characters <br/>
                 <IoSearch style={{marginTop: 6}}/>
               </button>
             </Link>
 
             <Link className="hel" href={'/comic'}>
               <button>
-                Go comics <br/>
+                Comics <br/>
                 <IoSearch style={{marginTop: 6}}/>
               </button>
             </Link>
