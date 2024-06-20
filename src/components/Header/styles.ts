@@ -16,4 +16,9 @@ export const Nav = styled.div `
   align-items: center;
   justify-content: center;
   background: yellow;
+  gap: 1rem;
+
+  a {
+    font-size: 12px;
+  }
 `
