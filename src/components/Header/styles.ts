@@ -23,10 +23,11 @@ export const Nav = styled.div `
     font-size: 12.5px;
     text-decoration: none;
     text-transform: lowercase; 
-    transition: all .5s;
+    transition: all .9s;
 
     &:hover {
       text-decoration: underline;
+      scale: 1.2;
     }
   }
 `
