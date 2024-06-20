@@ -43,7 +43,7 @@ export default function Prin() {
 
   // debounce
 
-  console.log(search)
+  console.log(data)
   return (
     <>
       <Header />
