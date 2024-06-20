@@ -14,8 +14,8 @@ export default function Header() {
         </Link>
       </A>
       <Nav>
-        <Link href={'/characters'}>Characters</Link>
-        <Link href={'/comic'}>Comics</Link>
+        <Link href={'/characters'}>characters</Link>
+        <Link href={'/comic'}>comics</Link>
       </Nav>
     </>
   )

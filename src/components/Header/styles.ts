@@ -19,6 +19,6 @@ export const Nav = styled.div `
   gap: 1rem;
 
   a {
-    font-size: 12px;
+    font-size: 12.5px;
   }
 `
