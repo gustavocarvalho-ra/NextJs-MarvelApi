@@ -19,7 +19,7 @@ export default function Home() {
           </div>
           
           <section className="options">
-            <Link className="hel" href={'/pesq'}>
+            <Link className="hel" href={'/characters'}>
               <button>
                 Characters <br/>
                 <IoSearch style={{marginTop: 6}}/>
