@@ -19,8 +19,14 @@ export const Nav = styled.div `
   gap: 2rem;
 
   a {
+    color: #1F0409;
     font-size: 12.5px;
     text-decoration: none;
     text-transform: lowercase; 
+    transition: all .5s;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `
