@@ -12,5 +12,6 @@ export default function Header() {
         {/* <input type="text">Search</input> */}
       </Link>
     </A>
+    <Nav
   )
 }

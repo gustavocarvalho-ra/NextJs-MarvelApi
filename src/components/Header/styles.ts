@@ -8,3 +8,12 @@ export const A = styled.div `
   justify-content: space-around;
   background: #ed1a23;
 `
+
+export const Nav = styled.div `
+  max-width: 100vw;
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: yellow;
+`
