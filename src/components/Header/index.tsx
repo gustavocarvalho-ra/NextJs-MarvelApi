@@ -2,16 +2,20 @@
 import Link from "next/link"
 import Image from "next/image"
 
-import { A } from "./styles"
+import { A, Nav } from "./styles"
 
 export default function Header() {
   return (
-    <A>
-      <Link href={'/'}>
-        <Image src={"/logo.png"} alt="Logo image" width={110} height={60}></Image>
-        {/* <input type="text">Search</input> */}
-      </Link>
-    </A>
-    <Nav
+    <>
+      <A>
+        <Link href={'/'}>
+          <Image src={"/logo.png"} alt="Logo image" width={110} height={60}></Image>
+          {/* <input type="text">Search</input> */}
+        </Link>
+      </A>
+      <Nav>
+        <Link>
+      </Nav>
+    </>
   )
 }
