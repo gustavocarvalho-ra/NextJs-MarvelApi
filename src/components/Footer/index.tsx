@@ -8,7 +8,7 @@ import { SiLinkedin } from "react-icons/si";
 
 
 
-export default function Foot() {
+export default function Footer() {
 
   return (
     <Foo>
