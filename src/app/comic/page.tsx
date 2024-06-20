@@ -50,7 +50,7 @@ export default function Comi() {
       <Bg>
         <BgFix>
           <div className="inPut">
-            <h3 className="h3">Search character</h3>
+            <h3 className="h3">Search Comic</h3>
             <input className="inp" type="text" defaultValue={search} onChange={(e) => setSearch(e.target.value)}/>
           </div>
           {data.map((item) => (
