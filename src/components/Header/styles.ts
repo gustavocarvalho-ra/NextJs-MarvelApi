@@ -11,7 +11,8 @@ export const A = styled.div `
 
 export const Nav = styled.div `
   max-width: 100vw;
-  height: 6vh;
+  font-weight: 200;
+  height: 3vh;
   display: flex;
   align-items: center;
   justify-content: center;
