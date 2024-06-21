@@ -16,7 +16,7 @@ export const Foo = styled.div `
 
     h3 {
       font-size: 12px;
-      font-weight: 400;
+      font-weight: 600;
       color: white;
     }
   }
