@@ -35,7 +35,7 @@ export const Nav = styled.div `
       width: 100%;
       border-radius: 25px;
       transform: scaleX(0);
-      background: #fff;
+      background: #ed1a23;
       transform-origin: right;
       transition: transform 0.6s ease;
     }
