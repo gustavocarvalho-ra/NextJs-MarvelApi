@@ -11,7 +11,7 @@ export const A = styled.div `
 
 export const Nav = styled.div `
   max-width: 100vw;
-  height: 3vh;
+  height: 6vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,10 +24,25 @@ export const Nav = styled.div `
     text-decoration: none;
     text-transform: lowercase; 
     transition: all .9s;
+    position: relative;
 
-    &:hover {
-      text-decoration: underline;
-      scale: 1.2;
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      border-radius: 25px;
+      transform: scaleX(0);
+      background: #fff;
+      transform-origin: right;
+      transition: transform 0.6s ease;
+    }
+
+    &:hover:before {
+      transform: scaleX(1);
+      transform-origin: left;
     }
   }
 `
