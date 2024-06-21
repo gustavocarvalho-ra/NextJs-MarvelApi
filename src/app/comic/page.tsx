@@ -29,6 +29,7 @@ export default function Comi() {
 
     const json = await response.json()
     return json.data.results;
+
   }
 
   useEffect(() => {
@@ -43,7 +44,8 @@ export default function Comi() {
 
   // debounce
 
-  console.log(search)
+  console.log(data)
+
   return (
     <>
       <Header />
@@ -61,10 +63,6 @@ export default function Comi() {
                 </div>
                 <div className="desc">
                   <p className="nam"><span>Name:</span> {item.title}</p>
-                  <p className="nam"><span>Price:</span> {`${item.prices.type}.${item.prices.price}`} </p>
-                  <p className="description"><span>Description:</span> <br/>
-                    {item.textObjects.text}
-                  </p>
                 </div>
               </div>
             </div>

@@ -21,6 +21,7 @@ export const Nav = styled.div `
 
   a {
     color: var(--main-color);
+    font-weight: 600;
     font-size: 12.5px;
     text-decoration: none;
     text-transform: lowercase; 
