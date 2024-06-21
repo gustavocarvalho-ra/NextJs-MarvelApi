@@ -62,7 +62,8 @@ export default function Comi() {
                   <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Image of Caracter" />
                 </div>
                 <div className="desc">
-                  <p className="nam"><span>Name:</span> {item.title}</p>
+                  <p className="nam"><span>Title:</span> {item.series.name}</p>
+                  <p className="nam"><span>Variant Title:</span> {item.variantDescription ? item.variantDescription : 'Sem nome variável'}</p>
                 </div>
               </div>
             </div>

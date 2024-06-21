@@ -10,16 +10,10 @@ export interface CaractersData {
 
 export interface ComicsData {
   id: string;
-  title: string;
-  prices: {
-    type: string;
-    price: string; 
+  series: {
+    name: string;
   }
-  textObjects: {
-    type: string;
-    language: string;
-    text: string;
-  }
+  variantDescription: string;
   thumbnail: {
     path: string;
     extension: string;
