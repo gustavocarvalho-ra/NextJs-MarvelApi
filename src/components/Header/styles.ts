@@ -6,7 +6,7 @@ export const A = styled.div `
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: #ed1a23;
+  background: var(--main-color);
 `
 
 export const Nav = styled.div `
@@ -19,7 +19,7 @@ export const Nav = styled.div `
   gap: 2rem;
 
   a {
-    color: #ed1a23;
+    background: var(--main-color);
     font-size: 12.5px;
     text-decoration: none;
     text-transform: lowercase; 
@@ -35,7 +35,7 @@ export const Nav = styled.div `
       width: 100%;
       border-radius: 25px;
       transform: scaleX(0);
-      background: #ed1a23;
+      background: var(--main-color);
       transform-origin: right;
       transition: transform 0.6s ease;
     }
