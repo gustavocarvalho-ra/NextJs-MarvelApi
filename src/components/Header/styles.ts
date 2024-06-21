@@ -15,11 +15,11 @@ export const Nav = styled.div `
   display: flex;
   align-items: center;
   justify-content: center;
-  background: yellow;
+  background: #000;
   gap: 2rem;
 
   a {
-    color: #1F0409;
+    color: #ed1a23;
     font-size: 12.5px;
     text-decoration: none;
     text-transform: lowercase; 
