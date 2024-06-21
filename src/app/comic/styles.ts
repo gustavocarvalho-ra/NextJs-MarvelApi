@@ -49,9 +49,10 @@ export const BgFix = styled.div `
   }
 
   .card {
-    width: 750px;
-    height: 200px;
+    width: 250px;
+    height: 370px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     border-radius: 8px;
@@ -59,26 +60,27 @@ export const BgFix = styled.div `
 
     .imge{
       width: 180px;
-      height: 180px;
+      height: 220px;
       display: flex;
       justify-content: center;
       border-radius: 8px;
-      margin-left: 1.5rem;
+      margin-top: 1rem;
 
       img {
         width: 180px;
-        height: 180px;
+        height: 220px;
         border-radius: 8px;
       }
     }
 
     .desc{
-      height: 100%;
+      width: 80%;
+      height: 90%;
       display: flex;
+      align-items: center;
       color: #d7d7d7;
       flex-direction: column;
-      gap: 1rem;
-      margin-left: 1.5rem;
+      gap: 2rem;
 
       span {
         color: red;
@@ -88,10 +90,12 @@ export const BgFix = styled.div `
       .nam {
         top: 1rem;
         position: relative;
-        margin-bottom: 1.7rem;
+        /* margin-bottom: 1.7rem; */
+        font-size: 14px;
+        margin: 0, 1rem, 1.7rem, 1rem;
       }
 
-      .description{
+      .variant{
         font-size: 12px;
       }
     }

@@ -21,7 +21,7 @@ export default function Comi() {
   const [data, setData] = useState<ComicsData[]>([]);
 
   async function logData() {
-    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/comics?format=comic&limit=30&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/comics?format=comic&limit=20&ts=${time}&apikey=${keyPu}&hash=${hash}`
+    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/comics?format=comic&limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/comics?format=comic&limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}`
 
     const response = await fetch (
       test
@@ -63,7 +63,7 @@ export default function Comi() {
                 </div>
                 <div className="desc">
                   <p className="nam"><span>Title:</span> {item.series.name}</p>
-                  <p className="nam"><span>Variant Title:</span> {item.variantDescription ? item.variantDescription : 'Sem nome variável'}</p>
+                  <p className="variant"><span>Variant Title:</span> {item.variantDescription ? item.variantDescription : 'Sem nome variável'}</p>
                 </div>
               </div>
             </div>
