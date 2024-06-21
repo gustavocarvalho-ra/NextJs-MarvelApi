@@ -4,3 +4,7 @@
   max-width: 100vw;
   box-sizing: border-box;
 }
+
+:root {
+  --main-color: #ed1a23;
+}
