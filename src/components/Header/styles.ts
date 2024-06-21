@@ -19,7 +19,7 @@ export const Nav = styled.div `
   gap: 2rem;
 
   a {
-    background: var(--main-color);
+    color: var(--main-color);
     font-size: 12.5px;
     text-decoration: none;
     text-transform: lowercase; 
