@@ -16,6 +16,7 @@ export default function Header() {
       <Nav>
         <Link className="a" href={'/characters'}>characters</Link>
         <Link className="a" href={'/comic'}>comics</Link>
+        <Link className="a" href={'/series'}>series</Link>
       </Nav>
     </>
   )
