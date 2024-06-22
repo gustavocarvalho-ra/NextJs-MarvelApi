@@ -35,6 +35,7 @@ export const Man = styled.div `
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      cursor: default;
   
       h1 {
         color: var(--main-color);
