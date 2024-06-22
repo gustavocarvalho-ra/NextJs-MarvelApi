@@ -32,6 +32,13 @@ export default function Home() {
                 <IoSearch style={{marginTop: 6}}/>
               </button>
             </Link>
+
+            <Link className="hel" href={'/series'}>
+              <button>
+                Series <br/>
+                <IoSearch style={{marginTop: 6}}/>
+              </button>
+            </Link>
           </section>
         </div>
         <Image className="bg" src={"/nest.png"} alt="test" fill={true} />
