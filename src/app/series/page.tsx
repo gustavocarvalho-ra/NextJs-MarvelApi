@@ -21,7 +21,7 @@ export default function Seri() {
   const [data, setData] = useState<SeriesData[]>([]);
 
   async function logData() {
-    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/series?limit=50&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/series?limit=50&ts=${time}&apikey=${keyPu}&hash=${hash}`
+    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/series?titleStartsWith=${search}&limit=50&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/series?limit=50&ts=${time}&apikey=${keyPu}&hash=${hash}`
 
     const response = await fetch (
       test
