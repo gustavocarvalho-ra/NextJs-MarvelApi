@@ -27,4 +27,5 @@ export interface SeriesData {
     path: string;
     extension: string;
   };
+  endYear: number;
 }
