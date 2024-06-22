@@ -23,7 +23,6 @@ export interface ComicsData {
 export interface SeriesData {
   id: string;
   title: string;
-  description: string;
   thumbnail: {
     path: string;
     extension: string;

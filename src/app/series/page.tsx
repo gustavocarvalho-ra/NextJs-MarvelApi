@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import md5 from "md5";
 
 // import { api } from "@/services/temp";
-import { ComicsData } from "../interfaces/types";
+import { SeriesData } from "../interfaces/types";
 import { Bg, BgFix } from "./styles";
 import Header from "@/components/Header";
 import Footer  from '@/components/Footer';
@@ -18,7 +18,7 @@ export default function Comi() {
 
   const [search, setSearch] = useState<string>("")
 
-  const [data, setData] = useState<ComicsData[]>([]);
+  const [data, setData] = useState<SeriesData[]>([]);
 
   async function logData() {
     const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/series?limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/series?limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}`
@@ -62,8 +62,7 @@ export default function Comi() {
                   <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Image of Caracter" />
                 </div>
                 <div className="desc">
-                  <p className="nam"><span>Title:</span> {item.series.title}</p>
-                  <p className="variant"><span>Variant Title:</span> {item.variantDescription ? item.variantDescription : 'Sem nome variável'}</p>
+                  <p className="nam"><span>Title:</span> {item.title}</p>
                 </div>
               </div>
             </div>
