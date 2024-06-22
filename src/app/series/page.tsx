@@ -10,7 +10,7 @@ import Header from "@/components/Header";
 import Footer  from '@/components/Footer';
 
 
-export default function Comi() {
+export default function Seri() {
   const time = Number(new Date());
   const keyPu = "1819332dc7d58586ce9a9bc528e0b7b2";
   const keyPr = "fbdcd44109e6c3664d1217c42bc25417a9421498";
@@ -21,7 +21,7 @@ export default function Comi() {
   const [data, setData] = useState<SeriesData[]>([]);
 
   async function logData() {
-    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/series?limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/series?limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}`
+    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/series?limit=50&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/series?limit=50&ts=${time}&apikey=${keyPu}&hash=${hash}`
 
     const response = await fetch (
       test
@@ -63,6 +63,7 @@ export default function Comi() {
                 </div>
                 <div className="desc">
                   <p className="nam"><span>Title:</span> {item.title}</p>
+                  <p className="nam"><span>End Year:</span> {item.endYear}</p>
                 </div>
               </div>
             </div>
