@@ -21,7 +21,7 @@ export default function Comi() {
   const [data, setData] = useState<ComicsData[]>([]);
 
   async function logData() {
-    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/comics?format=comic&limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/comics?format=comic&limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}`
+    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/comics?titleStartsWith=${search}&format=comic&limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/comics?format=comic&limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}`
 
     const response = await fetch (
       test
