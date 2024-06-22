@@ -52,14 +52,14 @@ export default function Comi() {
       <Bg>
         <BgFix>
           <div className="inPut">
-            <h3 className="h3">Search Comic</h3>
+            <h3 className="h3">Search Serie</h3>
             <input className="inp" type="text" defaultValue={search} onChange={(e) => setSearch(e.target.value)}/>
           </div>
           {data.map((item) => (
             <div key={item.id} className="cardOf">
               <div className="card">
                 <div className="imge">
-                  <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Image of Caracter" />
+                  <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Image of Serie" />
                 </div>
                 <div className="desc">
                   <p className="nam"><span>Title:</span> {item.title}</p>
