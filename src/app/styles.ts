@@ -37,11 +37,13 @@ export const Man = styled.div `
       flex-direction: column;
   
       h1 {
-        color: red;
+        color: var(--main-color);
         font-size: 7em;
+        font-weight: 900;
   
         span {
           color: #fff;
+          font-weight: 900;
         }
       }
     }
