@@ -21,7 +21,7 @@ export default function Prin() {
   const [data, setData] = useState<CaractersData[]>([]);
 
   async function logData() {
-    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${search}&limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/characters?limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}`
+    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/events?orderBy=modified&nameStartsWith=${search}&limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/events?orderBy=modified&limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}`
 
     const response = await fetch (
       test
