@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import md5 from "md5";
 
 // import { api } from "@/services/temp";
-import { CaractersData } from "../interfaces/types";
+import { EventData } from "../interfaces/types";
 import { Bg, BgFix } from "./styles";
 import Header from "@/components/Header";
 import Footer  from '@/components/Footer';
@@ -18,10 +18,10 @@ export default function Prin() {
 
   const [search, setSearch] = useState<string>("")
 
-  const [data, setData] = useState<CaractersData[]>([]);
+  const [data, setData] = useState<EventData[]>([]);
 
   async function logData() {
-    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/events?orderBy=modified&nameStartsWith=${search}&limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/events?orderBy=modified&limit=100&ts=${time}&apikey=${keyPu}&hash=${hash}`
+    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/events?orderBy=modified&nameStartsWith=${search}&limit=80&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/events?orderBy=modified&limit=80&ts=${time}&apikey=${keyPu}&hash=${hash}`
 
     const response = await fetch (
       test
@@ -60,7 +60,7 @@ export default function Prin() {
                   <img src={`${item.thumbnail.path}.${item.thumbnail.extension}`} alt="Image of Caracter" />
                 </div>
                 <div className="desc">
-                  <p className="nam"><span>Name of Event:</span> {item.name}</p>
+                  <p className="nam"><span>Name of Event:</span> {item.title}</p>
                   <p className="description"><span>Description of Event:</span> <br/>
                     {item.description ? item.description : 'Personagem sem descrição na Api'}
                   </p>

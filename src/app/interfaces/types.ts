@@ -33,6 +33,7 @@ export interface SeriesData {
 export interface EventData {
   id: string;
   title: string;
+  description: string;
   thumbnail: {
     path: string;
     extension: string;
