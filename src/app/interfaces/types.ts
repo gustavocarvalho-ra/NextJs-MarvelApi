@@ -29,3 +29,13 @@ export interface SeriesData {
   };
   endYear: number;
 }
+
+export interface EventData {
+  id: string;
+  title: string;
+  thumbnail: {
+    path: string;
+    extension: string;
+  };
+  endYear: number;
+}
