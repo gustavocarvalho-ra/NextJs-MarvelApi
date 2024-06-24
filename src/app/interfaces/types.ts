@@ -38,5 +38,6 @@ export interface EventData {
     path: string;
     extension: string;
   };
-  endYear: number;
+  start: string;
+  end: string;
 }
