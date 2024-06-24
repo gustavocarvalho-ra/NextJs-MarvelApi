@@ -50,7 +50,7 @@ export const BgFix = styled.div `
 
   .card {
     width: 750px;
-    height: 200px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: flex-start;

@@ -64,6 +64,9 @@ export default function Prin() {
                   <p className="description"><span>Description of Event:</span> <br/>
                     {item.description ? item.description : 'Personagem sem descrição na Api'}
                   </p>
+                  <div className="time">
+                    <p>{item.start}</p> <br/> <p>{item.end}</p>
+                  </div>
                 </div>
               </div>
             </div>
