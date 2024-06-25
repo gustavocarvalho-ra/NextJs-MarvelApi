@@ -94,6 +94,12 @@ export const BgFix = styled.div `
       .description{
         font-size: 12px;
       }
+
+      .time{
+        font-size: 13px;
+        display: flex;
+        justify-content: space-evenly;
+      }
     }
   }
 `
