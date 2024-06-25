@@ -65,7 +65,8 @@ export default function Prin() {
                     {item.description ? item.description : 'Personagem sem descrição na Api'}
                   </p>
                   <div className="time">
-                    <p>{item.start}</p> <br/> <p>{item.end}</p>
+                    <p><span>Start:</span>{item.start}</p>
+                    <p><span>End:</span>{item.end}</p>
                   </div>
                 </div>
               </div>
