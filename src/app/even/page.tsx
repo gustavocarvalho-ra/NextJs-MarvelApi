@@ -21,7 +21,7 @@ export default function Prin() {
   const [data, setData] = useState<EventData[]>([]);
 
   async function logData() {
-    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/events?orderBy=modified&nameStartsWith=${search}&limit=80&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/events?orderBy=modified&limit=80&ts=${time}&apikey=${keyPu}&hash=${hash}`
+    const test = search !== "" ? `https://gateway.marvel.com:443/v1/public/events?nameStartsWith=${search}&limit=80&ts=${time}&apikey=${keyPu}&hash=${hash}` : `https://gateway.marvel.com:443/v1/public/events?limit=80&ts=${time}&apikey=${keyPu}&hash=${hash}`
 
     const response = await fetch (
       test
@@ -67,7 +67,7 @@ export default function Prin() {
                   <div className="time">
                     <p>
                       <span>Start: </span>
-                      {item.start ? item.start : 'Arco sem data de início definido'}
+                      {item.start ? item.start : 'Indisponível na Api'}
                     </p>
                     <p>
                       <span>End: </span>
