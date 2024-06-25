@@ -78,7 +78,7 @@ export const BgFix = styled.div `
       color: #d7d7d7;
       flex-direction: column;
       gap: 1rem;
-      margin-left: 1.5rem;
+      margin: 0 .5rem 0 1.5rem;
 
       span {
         color: red;
