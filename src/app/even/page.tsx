@@ -65,8 +65,14 @@ export default function Prin() {
                     {item.description ? item.description : 'Personagem sem descrição na Api'}
                   </p>
                   <div className="time">
-                    <p><span>Start:</span>{item.start}</p>
-                    <p><span>End:</span>{item.end}</p>
+                    <p>
+                      <span>Start: </span>
+                      {item.start ? item.start : 'Arco sem data de início definido'}
+                    </p>
+                    <p>
+                      <span>End: </span>
+                      {item.end ? item.end : 'Arco em processo'}
+                    </p>
                   </div>
                 </div>
               </div>
