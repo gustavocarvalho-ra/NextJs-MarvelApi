@@ -14,6 +14,7 @@ export default function Home() {
     <Man>
       <div className="bac">
         <div className="content">
+        <Image className="bg" src={"/nest.png"} alt="test" fill={true} />
           <div className="title">
             <h1>MARVEL <span>API</span></h1>
           </div>
@@ -48,7 +49,6 @@ export default function Home() {
             </Link>
           </section>
         </div>
-        <Image className="bg" src={"/nest.png"} alt="test" fill={true} />
       </div>
     </Man>
   );
