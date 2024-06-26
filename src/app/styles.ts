@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const Bg = styled.div `
+  .bg {
+    object-fit: cover;
+    filter: brightness(13%);
+    z-index: -5;
+  }
+` 
 
 export const Man = styled.div `
   width: 100vw;
@@ -13,12 +20,6 @@ export const Man = styled.div `
     width: 100vw;
     height: 100vh;
     position: relative;
-
-    .bg {
-      object-fit: cover;
-      filter: brightness(13%);
-      z-index: -5;
-    }
   }
 
   .content {

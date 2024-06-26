@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import { Man } from "./styles"; 
+import { Man, Bg } from "./styles"; 
 import { IoSearch } from "react-icons/io5";
 
 
@@ -13,8 +13,10 @@ export default function Home() {
   return (
     <Man>
       <div className="bac">
-        <div className="content">
-        <Image className="bg" src={"/nest.png"} alt="test" fill={true} />
+        <div className="content">,
+          <Bg>
+            <Image src={"/nest.png"} alt="test" fill={true} />
+          </Bg>
           <div className="title">
             <h1>MARVEL <span>API</span></h1>
           </div>
