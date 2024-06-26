@@ -43,6 +43,8 @@ export default function Prin() {
 
   // debounce
 
+
+
   console.log(data)
   return (
     <>
@@ -67,12 +69,15 @@ export default function Prin() {
                   <div className="time">
                     <p>
                       <span>Start: </span>
-                      {item.start ? item.start : 'Indisponível na Api'}
+                      {item.start ? (item.start.substr (1, 10)) : 'Indisponível na Api'}
+                      {/* {item.start ? String.prototype.substring(item.start.substr (0, 10)) : 'Indisponível na Api'} */}
+                      {/* {item.start ? SUBSTR(item.start, 1, 10) : 'Indisponível na Api'} */}
                     </p>
                     <p>
                       <span>End: </span>
-                      {item.end ? item.end : 'Arco em processo'}
+                      select:substring({item.end ? item.end : 'Arco em processo'})
                     </p>
+                    
                   </div>
                 </div>
               </div>
