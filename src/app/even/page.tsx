@@ -69,13 +69,11 @@ export default function Prin() {
                   <div className="time">
                     <p>
                       <span>Start: </span>
-                      {item.start ? (item.start.substr (1, 10)) : 'Indisponível na Api'}
-                      {/* {item.start ? String.prototype.substring(item.start.substr (0, 10)) : 'Indisponível na Api'} */}
-                      {/* {item.start ? SUBSTR(item.start, 1, 10) : 'Indisponível na Api'} */}
+                      {item.start ? (item.start.substring (0, 10)) : 'Indisponível na Api'}
                     </p>
                     <p>
                       <span>End: </span>
-                      select:substring({item.end ? item.end : 'Arco em processo'})
+                      {item.end ? item.end.substring (0, 10) : 'Arco em processo'}
                     </p>
                     
                   </div>
