@@ -75,7 +75,6 @@ export default function Prin() {
                       <span>End: </span>
                       {item.end ? item.end.substring (0, 10) : 'Arco em processo'}
                     </p>
-                    
                   </div>
                 </div>
               </div>
