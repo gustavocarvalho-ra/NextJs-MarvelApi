@@ -15,7 +15,7 @@ export default function Home() {
       <div className="bac">
         <div className="content">,
           <Bg>
-            <Image src={"/nest.png"} alt="test" fill={true} />
+            <Image src={"/nest.png"} alt="test" fill={true} style={{filter: "brightness(13%)"}}/>
           </Bg>
           <div className="title">
             <h1>MARVEL <span>API</span></h1>

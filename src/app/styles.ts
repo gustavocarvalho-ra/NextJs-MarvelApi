@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const Bg = styled.div `
-  .bg {
+
+  Image {
     object-fit: cover;
     filter: brightness(13%);
-    z-index: -5;
+    z-index: -100;
   }
 ` 
 
@@ -37,6 +38,7 @@ export const Man = styled.div `
       justify-content: center;
       flex-direction: column;
       cursor: default;
+      z-index: 5;
   
       h1 {
         color: var(--main-color);
