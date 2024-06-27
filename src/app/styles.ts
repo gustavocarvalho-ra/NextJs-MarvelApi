@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Bg = styled.div `
-
   Image {
     object-fit: cover;
     filter: brightness(13%);
@@ -15,12 +14,12 @@ export const Man = styled.div `
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column
+  ;
 
   .bac {
     width: 100%;
     height: 100%;
-    /* position: relative; */
   }
 
   .content {

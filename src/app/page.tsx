@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import { Man, Bg } from "./styles"; 
 import { IoSearch } from "react-icons/io5";
+import { styled } from 'styled-components';
 
 
 
@@ -15,7 +16,7 @@ export default function Home() {
       <Bg>
         <Image src={"/nest.png"} alt="test" fill={true} style={{filter: "brightness(13%)"}}/>
       </Bg>
-      <div className="bac">
+      <div className="bac" style={{zIndex: "100"}}>
         <div className="content">,
           <div className="title">
             <h1>MARVEL <span>API</span></h1>
