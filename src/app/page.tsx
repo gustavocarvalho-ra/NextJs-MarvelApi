@@ -5,8 +5,6 @@ import Image from "next/image";
 
 import { Man, Bg } from "./styles"; 
 import { IoSearch } from "react-icons/io5";
-import { styled } from 'styled-components';
-
 
 
 export default function Home() {
