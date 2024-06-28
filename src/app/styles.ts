@@ -14,8 +14,8 @@ export const Man = styled.section `
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column
-  ;
+  flex-direction: column;
+  z-index: 50;
 
   .bac {
     width: 100%;
