@@ -28,7 +28,7 @@ export default function Home() {
               </button>
             </Link>
 
-            <Link className="hel" href={'/comic'}>
+            <Link className="hel" href={'/comic'} style={{zIndex: "100"}}>
               <button>
                 Comics <br/>
                 <IoSearch style={{marginTop: 6}}/>
