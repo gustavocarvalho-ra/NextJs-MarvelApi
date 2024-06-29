@@ -20,6 +20,7 @@ export const Man = styled.section `
   .bac {
     width: 100%;
     height: 100%;
+    z-index: 50;
   }
 
   .content {
