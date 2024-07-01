@@ -2,3 +2,6 @@
 ## https://developer.marvel.com/ 
 
 Projeto feito usando:
+
+TS
+NEXT
