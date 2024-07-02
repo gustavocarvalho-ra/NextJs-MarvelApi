@@ -20,7 +20,7 @@ export default function Home() {
             <h1>MARVEL <span>API</span></h1>
           </div>
           
-          <section className="options" style={{zIndex: "100"}}>
+          <section className="options" style={{zIndex: "100", Height: "100%"}}>
             <Link className="hel" href={'/characters'}>
               <button>
                 Characters <br/>
