@@ -15,12 +15,10 @@ export const Man = styled.section `
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  z-index: 50;
 
   .bac {
     width: 100%;
     height: 100%;
-    z-index: 50;
   }
 
   .content {
@@ -38,7 +36,6 @@ export const Man = styled.section `
       justify-content: center;
       flex-direction: column;
       cursor: default;
-      z-index: 5;
   
       h1 {
         color: var(--main-color);

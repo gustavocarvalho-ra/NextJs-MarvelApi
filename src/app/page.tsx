@@ -14,13 +14,13 @@ export default function Home() {
       <Bg>
         <Image src={"/nest.png"} alt="test" fill={true} style={{filter: "brightness(13%)"}}/>
       </Bg>
-      <div className="bac" style={{zIndex: "100"}}>
+      <div className="bac">
         <div className="content">,
-          <div className="title">
+          <div className="title" style={{zIndex: "100"}}>
             <h1>MARVEL <span>API</span></h1>
           </div>
           
-          <section className="options" style={{zIndex: "100", height: "100%", width: "100%"}}>
+          <section className="options">
             <Link className="hel" href={'/characters'}>
               <button>
                 Characters <br/>
@@ -28,7 +28,7 @@ export default function Home() {
               </button>
             </Link>
 
-            <Link className="hel" href={'/comic'} style={{zIndex: "100"}}>
+            <Link className="hel" href={'/comic'}>
               <button>
                 Comics <br/>
                 <IoSearch style={{marginTop: 6}}/>
