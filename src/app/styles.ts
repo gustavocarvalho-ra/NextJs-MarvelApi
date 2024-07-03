@@ -8,7 +8,7 @@ export const Bg = styled.div `
   }
 ` 
 
-export const Man = styled.section `
+export const Man = styled.div `
   width: 100vw;
   height: 100vh;
   display: flex;
