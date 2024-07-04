@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import { Man, Bg } from "./styles"; 
 import { IoSearch } from "react-icons/io5";
+import Loading from "./loading";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Bg>
         <Image src={"/nest.png"} alt="test" fill={true} style={{filter: "brightness(13%)"}}/>
       </Bg>
+
       <div className="bac">
         <div className="content">
           <div className="title" style={{zIndex: "100"}}>
