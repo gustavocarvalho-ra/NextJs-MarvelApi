@@ -9,42 +9,12 @@ export const Bg = styled.div `
 ` 
 
 export const Man = styled.div `
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
   .bac {
-    width: 100%;
-    height: 100%;
   }
-
   .content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-
     .title {
-      height: 30vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      cursor: default;
-  
       h1 {
-        color: var(--main-color);
-        font-size: 7em;
-        font-weight: 900;
-  
         span {
-          color: #fff;
-          font-weight: 900;
         }
       }
     }

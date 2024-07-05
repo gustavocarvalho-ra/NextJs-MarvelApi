@@ -16,11 +16,11 @@ export default function Main() {
         <div className="bac" style={{width: "100%", height: "100%"}}>
           <div className="content" style={{width: "100vw", height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
             <div className="title" style={{height: "30vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", cursor: "default"}}>
-              <h1>MARVEL <span>API</span></h1>
+              <h1 style={{color: "var(--main-color)", fontSize: "7em", fontWeight: "900"}}>MARVEL <span style={{color: "#fff", fontWeight: "900"}}>API</span></h1>
             </div>
             
-            <section className="options">
-              <Link className="hel" href={'/characters'}>
+            <section className="options" style={{display: "flex", gap: "2.5rem"}}>
+              <Link className="hel" href={'/characters'} style={{width: "250px", height: "100px", alignContent: "center", justifyContent: "center"}}>
                 <button>
                   Characters <br/>
                   <IoSearch style={{marginTop: 6}}/>
