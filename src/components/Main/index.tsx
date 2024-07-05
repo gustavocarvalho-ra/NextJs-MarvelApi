@@ -27,21 +27,21 @@ export default function Main() {
                 </button>
               </Link>
 
-              <Link className="hel" href={'/comic'}>
-                <button>
+              <Link className="hel" href={'/comic'} style={{width: "250px", height: "100px", alignContent: "center", justifyContent: "center"}}>
+                <button style={{width: "100%", height: "100%", color: "#fff", fontSize: "2em", textTransform:"uppercase", background: "rgba(255, 255, 255, 0.05)", filter: "blur(0.1px)", border: "1px solid rgba(255, 255, 255, 0.3)", borderRadius: "16px", cursor: "pointer", transition: "all .6s"}}>
                   Comics <br/>
                   <IoSearch style={{marginTop: 6}}/>
                 </button>
               </Link>
 
-              <Link className="hel" href={'/series'}>
+              <Link className="hel" href={'/series'} style={{width: "250px", height: "100px", alignContent: "center", justifyContent: "center"}}>
                 <button>
                   Series <br/>
                   <IoSearch style={{marginTop: 6}}/>
                 </button>
               </Link>
 
-              <Link className="hel" href={'/even'}>
+              <Link className="hel" href={'/even'} style={{width: "250px", height: "100px", alignContent: "center", justifyContent: "center"}}>
                 <button>
                   events <br/>
                   <IoSearch style={{marginTop: 6}}/>
