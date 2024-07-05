@@ -11,9 +11,7 @@ export default function Main() {
   return(
     <>
       <Man style={{width: "100vw", height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
-        <Bg>
-          <Image src={"/nest.png"} alt="test" fill={true} style={{filter: "brightness(13%"}}/>
-        </Bg>
+        
 
         <div className="bac" style={{width: "100%", height: "100%"}}>
           <div className="content" style={{width: "100vw", height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
@@ -53,11 +51,11 @@ export default function Main() {
           </div>
         </div>
 
+        <Bg>
+          <Image src={"/nest.png"} alt="test" fill={true} style={{filter: "brightness(13%", zIndex: "-5"}}/>
+        </Bg>
 
       </Man>
     </>
   )
 }
-
-
-        
