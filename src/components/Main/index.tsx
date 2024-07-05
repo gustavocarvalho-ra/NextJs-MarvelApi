@@ -21,7 +21,7 @@ export default function Main() {
             
             <section className="options" style={{display: "flex", gap: "2.5rem"}}>
               <Link className="hel" href={'/characters'} style={{width: "250px", height: "100px", alignContent: "center", justifyContent: "center"}}>
-                <button>
+                <button style={{width: "100%", height: "100%", color: "#fff", fontSize: "2em", textTransform:"uppercase", background: "rgba(255, 255, 255, 0.05)", filter: "blur(0.1px)", border: "1px solid rgba(255, 255, 255, 0.3)", borderRadius: "16px", cursor: "pointer", transition: "all .6s"}}>
                   Characters <br/>
                   <IoSearch style={{marginTop: 6}}/>
                 </button>
@@ -35,14 +35,14 @@ export default function Main() {
               </Link>
 
               <Link className="hel" href={'/series'} style={{width: "250px", height: "100px", alignContent: "center", justifyContent: "center"}}>
-                <button>
+                <button style={{width: "100%", height: "100%", color: "#fff", fontSize: "2em", textTransform:"uppercase", background: "rgba(255, 255, 255, 0.05)", filter: "blur(0.1px)", border: "1px solid rgba(255, 255, 255, 0.3)", borderRadius: "16px", cursor: "pointer", transition: "all .6s"}}>
                   Series <br/>
                   <IoSearch style={{marginTop: 6}}/>
                 </button>
               </Link>
 
               <Link className="hel" href={'/even'} style={{width: "250px", height: "100px", alignContent: "center", justifyContent: "center"}}>
-                <button>
+                <button style={{width: "100%", height: "100%", color: "#fff", fontSize: "2em", textTransform:"uppercase", background: "rgba(255, 255, 255, 0.05)", filter: "blur(0.1px)", border: "1px solid rgba(255, 255, 255, 0.3)", borderRadius: "16px", cursor: "pointer", transition: "all .6s"}}>
                   events <br/>
                   <IoSearch style={{marginTop: 6}}/>
                 </button>

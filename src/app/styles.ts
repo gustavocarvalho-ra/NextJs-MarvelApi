@@ -20,14 +20,7 @@ export const Man = styled.div `
     }
   
     .options{
-      display: flex;
-      gap: 2.5rem;
       .hel {
-        width: 250px;
-        height: 100px;
-        align-content: center;
-        justify-content: center;
-        
         button {
           width: 100%;
           height: 100%;
