@@ -15,7 +15,7 @@ export default function Main() {
           <Image src={"/nest.png"} alt="test" fill={true} style={{filter: "brightness(13%"}}/>
         </Bg>
 
-        <div className="bac">
+        <div className="bac" style={{width: "100%", height: "100%"}}>
           <div className="content">
             <div className="title" style={{zIndex: "100"}}>
               <h1>MARVEL <span>API</span></h1>
