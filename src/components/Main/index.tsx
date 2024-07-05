@@ -16,8 +16,8 @@ export default function Main() {
         </Bg>
 
         <div className="bac" style={{width: "100%", height: "100%"}}>
-          <div className="content">
-            <div className="title" style={{zIndex: "100"}}>
+          <div className="content" style={{width: "100vw", height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
+            <div className="title" style={{height: "30vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", cursor: "default"}}>
               <h1>MARVEL <span>API</span></h1>
             </div>
             
