@@ -52,7 +52,7 @@ export default function Main() {
         </div>
 
         <Bg>
-          <Image src={"/nest.png"} alt="test" fill={true} style={{filter: "brightness(13%", zIndex: "-5"}}/>
+          <Image src={"/nest.png"} alt="test" fill={true} style={{filter: "brightness(13%)", zIndex: "-5"}}/>
         </Bg>
 
       </Man>
