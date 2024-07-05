@@ -10,7 +10,7 @@ import {Man, Bg} from "./styles"
 export default function Main() {
   return(
     <>
-      <Man>
+      <Man style={{width: "100vw", height: "100vh", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
         <Bg>
           <Image src={"/nest.png"} alt="test" fill={true} style={{filter: "brightness(13%"}}/>
         </Bg>
