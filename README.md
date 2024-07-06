@@ -22,9 +22,12 @@
 ![marvel-api1](https://github.com/gustavocarvalho-ra/NextJs-MarvelApi/assets/137126878/7aa85926-2463-4c6b-a2f0-b8315863c42e)
 
 
-
 ### page 2
 ![marvel-api2](https://github.com/gustavocarvalho-ra/NextJs-MarvelApi/assets/137126878/75975840-68b7-435f-8e22-26d28307cf38)
+
+
+### page 3
+![marvel-api3](https://github.com/gustavocarvalho-ra/NextJs-MarvelApi/assets/137126878/a4d50a57-2157-4ef6-ba9f-438ca123b8d1)
 
 
 
