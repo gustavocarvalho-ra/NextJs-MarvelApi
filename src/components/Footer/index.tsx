@@ -1,15 +1,10 @@
-"use client"
-
 import Link from "next/link";
 
 import { Foo } from "./styles";
 import { FaGithub } from "react-icons/fa6";
 import { SiLinkedin } from "react-icons/si";
 
-
-
 export default function Footer() {
-
   return (
     <Foo>
       <div className="container">
