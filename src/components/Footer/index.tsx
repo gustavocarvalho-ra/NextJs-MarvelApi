@@ -9,7 +9,7 @@ export default function Footer() {
     <Foo>
       <div className="container">
         <h3>
-          Desenvoldido por: Gustavo
+          Desenvolvido por: Gustavo
         </h3>
 
         <div style={{display: 'flex', alignItems: 'center', height: '100%'}}>
